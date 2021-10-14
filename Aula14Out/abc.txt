@@ -1,0 +1,23 @@
+ Volume in drive D is DATA
+ Volume Serial Number is BC55-6F91
+
+ Directory of D:\Aulas\PG\21-22\Code\Repo-LEIC11D
+
+10/14/2021  12:03 PM    <DIR>          .
+10/14/2021  12:03 PM    <DIR>          ..
+10/14/2021  10:42 AM               301 .gitignore
+10/14/2021  12:05 PM                 0 abc.txt
+10/14/2021  11:28 AM    <DIR>          META-INF
+10/14/2021  11:27 AM                92 Output.kt
+10/14/2021  11:47 AM                66 Output1.kt
+10/14/2021  12:01 PM               163 Output2.kt
+10/14/2021  12:01 PM               853 Output2Kt.class
+10/14/2021  10:42 AM               113 README.md
+               7 File(s)          1,588 bytes
+               3 Dir(s)  869,234,302,976 bytes free
+Hello  ISEL27
+A
+27.5
+true
+false
+End.
