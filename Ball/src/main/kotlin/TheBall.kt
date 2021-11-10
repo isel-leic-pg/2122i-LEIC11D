@@ -1,37 +1,53 @@
 import pt.isel.canvas.*
 
-const val DELTA_X_BALL = 4
-const val RADIUS_BALL = 80
+const val DELTA_MAX_BALL = 10
+const val RADIUS_BALL = 30
 const val FRAMES_SECOND = 50
 const val PERIOD_MOVE = 1000 / FRAMES_SECOND //in milliseconds.
 const val CANVAS_WIDTH = 600
 const val LIMIT_RIGHT = CANVAS_WIDTH-RADIUS_BALL
 const val LIMIT_LEFT = RADIUS_BALL
 
-data class Ball(val x:Int, val y:Int, val deltaX:Int)
+data class Point(val x: Int, val y: Int)
+data class Delta(val dx: Int, val dy: Int)
 
-fun drawBall(canvas: Canvas, b: Ball) {
-    canvas.erase()
-    canvas.drawCircle(b.x, b.y, RADIUS_BALL, RED)
+data class Ball(val center: Point, val shift: Delta)
+
+fun Canvas.drawCircle(c: Point, radius: Int, color: Int) {
+    drawCircle(c.x, c.y, radius, color)
 }
 
-fun move(b: Ball): Ball = when {
-    b.x in LIMIT_LEFT..LIMIT_RIGHT ->   b.copy( x= b.x+b.deltaX )
-    b.x < LIMIT_LEFT ->                 Ball( b.x+DELTA_X_BALL, b.y, DELTA_X_BALL )
-    /*b.x > LIMIT_RIGHT*/ else ->       Ball( b.x-DELTA_X_BALL, b.y, -DELTA_X_BALL )
+fun Canvas.drawBall(b: Ball) {
+    erase()
+    drawCircle(b.center, RADIUS_BALL, RED)
 }
+
+fun Ball.moved(): Ball {
+    /*
+    val dx = when {
+        center.x+deltaX < LIMIT_LEFT ->  DELTA_X_BALL
+        center.x+deltaX > LIMIT_RIGHT -> -DELTA_X_BALL
+        else -> deltaX
+    }
+     */
+    val c = Point( center.x+shift.dx , center.y+shift.dy )
+    return Ball(c,shift)
+}
+
+fun randomInt() = (-DELTA_MAX_BALL..DELTA_MAX_BALL).random()
+fun randomDelta() = Delta( randomInt(), randomInt() )
 
 fun main() {
     onStart {
         val arena = Canvas(CANVAS_WIDTH,300)
-        var ball = Ball(RADIUS_BALL, arena.height / 2, DELTA_X_BALL)
-        drawBall(arena, ball)
+        var ball = Ball( Point(arena.width/2, arena.height/2), randomDelta() )
+        arena.drawBall(ball)
         arena.onTimeProgress(PERIOD_MOVE) { time ->
-            ball = move(ball)
-            drawBall(arena, ball)
+            ball = ball.moved()
+            arena.drawBall(ball)
         }
         arena.onMouseDown { me: MouseEvent ->
-            ball = Ball(me.x, me.y, ball.deltaX)
+            ball = Ball( Point(me.x, me.y), randomDelta())
         }
     }
     onFinish {  }
