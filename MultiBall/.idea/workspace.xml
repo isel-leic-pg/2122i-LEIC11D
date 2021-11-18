@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80473516-784b-4457-aa3c-aa57a8c2385a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/View.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Ball.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Ball.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Point.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/View.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/View.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/BallTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/BallTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

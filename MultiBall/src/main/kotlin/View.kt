@@ -19,3 +19,16 @@ fun Canvas.drawBall(b: Ball?) {
     if (b!=null)
         drawCircle(b.center, RADIUS_BALL, b.color)
 }
+
+/**
+ * Show all balls in canvas and the number os balls.
+ * @receiver Canvas where balls is showed.
+ * @param bs Current list of balls
+ */
+fun Canvas.drawBalls(bs: List<Ball>) {
+    erase()
+    drawText(0,height,"${bs.size}")
+    bs.forEach { b ->
+        drawCircle(b.center, RADIUS_BALL, b.color)
+    }
+}
