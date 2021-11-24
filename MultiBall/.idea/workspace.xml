@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80473516-784b-4457-aa3c-aa57a8c2385a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Pong/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/src/main/kotlin/Ball.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/src/main/kotlin/Game.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/src/main/kotlin/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/src/main/kotlin/Point.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/src/main/kotlin/Racket.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pong/src/main/kotlin/View.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Ball.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Ball.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Point.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/View.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/View.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/BallTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/BallTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +65,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="212n8bUdKJ3r4YZ7komWjnrThnK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -60,6 +75,7 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -187,5 +203,8 @@
       <updated>1637147896705</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
