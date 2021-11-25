@@ -13,9 +13,13 @@ fun main() {
     onStart {
         val arena = Canvas(600,300)
         var game = game(arena.width, arena.height)
-        arena.drawGame( game )
+        game = game.createBall()
         arena.onTimeProgress(PERIOD_MOVE) {
+            game = game.moveBalls()
             arena.drawGame(game)
+        }
+        arena.onTimeProgress(3000) {
+            game = game.createBall()
         }
         arena.onMouseMove { me: MouseEvent ->
             game = game.moveRacket(me.y)
