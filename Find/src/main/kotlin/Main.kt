@@ -6,6 +6,6 @@ fun main() {
     val seqDoubles: List<Double> = sequenceDoubles(min=0.0, max=20.0, step=0.5)
     println(seqDoubles)
 
-    val idx = findSequentialR(seqDoubles,13.5)
+    val idx = findSequentialR(seqDoubles,13.2)
     println(idx)
 }
